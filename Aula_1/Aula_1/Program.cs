@@ -10,7 +10,17 @@ namespace Aula_1
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Informe numero: ");
+            double numero = Convert.ToDouble(Console.ReadLine());
             
+            Console.WriteLine("Informe outro numero: ");
+            double numero2 = Convert.ToDouble(Console.ReadLine());
+            
+            double resultado = numero / numero2;
+
+            Console.WriteLine("Resultado: " + resultado);
+           
+            Console.ReadKey();
         }
     }
 }
