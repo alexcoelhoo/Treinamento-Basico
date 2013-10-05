@@ -10,6 +10,14 @@ namespace Aula_1
     {
         static void Main(string[] args)
         {
+            QualificarTriangulo();
+           
+            Console.ReadKey();
+        }
+
+
+        public static void QualificarTriangulo()
+        {
             Console.WriteLine("Informe os lados de um triangulo: ");
             int lado1 = Convert.ToInt32(Console.ReadLine());
             int lado2 = Convert.ToInt32(Console.ReadLine());
@@ -23,11 +31,21 @@ namespace Aula_1
             else if ((lado1 == lado2) || (lado2 == lado3) || (lado3 == lado1))
             {
                 Console.WriteLine("Triangulo isosceles");
-                                
+
             }
             else Console.WriteLine("Triangulo escaleno");
-          
-            Console.ReadKey();
+
+            DecidirNavegacao();
+        }
+
+        public static void DecidirNavegacao()
+        {
+            Console.WriteLine("Digite 'S' para continuar? ");
+            string resposta = Console.ReadLine();
+            if (resposta == "s")
+            {
+                QualificarTriangulo();
+            }
         }
     }
 }
