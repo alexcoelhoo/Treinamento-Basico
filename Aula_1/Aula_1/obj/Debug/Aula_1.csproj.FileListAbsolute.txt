@@ -1,0 +1,6 @@
+C:\Alex\Treinamento-B-sico\Aula_1\Aula_1\bin\Debug\Aula_1.exe.config
+C:\Alex\Treinamento-B-sico\Aula_1\Aula_1\bin\Debug\Aula_1.exe
+C:\Alex\Treinamento-B-sico\Aula_1\Aula_1\bin\Debug\Aula_1.pdb
+C:\Alex\Treinamento-B-sico\Aula_1\Aula_1\obj\Debug\Aula_1.csprojResolveAssemblyReference.cache
+C:\Alex\Treinamento-B-sico\Aula_1\Aula_1\obj\Debug\Aula_1.exe
+C:\Alex\Treinamento-B-sico\Aula_1\Aula_1\obj\Debug\Aula_1.pdb
