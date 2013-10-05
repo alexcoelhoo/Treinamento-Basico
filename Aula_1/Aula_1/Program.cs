@@ -10,14 +10,14 @@ namespace Aula_1
     {
         static void Main(string[] args)
         {
-           
+            List<string> animais = new List<string>();
+            animais.Add("cachorro");
+            animais.Add("gato");
+            animais.Add("galinha");
 
-            for (int i = 0; i < 100; i++)
+            foreach (string animal in animais)
             {
-                if (i % 2 == 0)
-                {
-                    Console.WriteLine(i);
-                }
+                Console.WriteLine(animal);
             }
           
             Console.ReadKey();
