@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="79b1badf-e5d5-4f1d-9bd3-5b418dfc0dde" name="Universidade" linkedPackageId="352a7f04-c953-4777-862e-584343ab5937" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="74b6a3b2-898d-4887-93d2-5f66c72d47ad">
+      <profileInstance Id="8586c135-b151-48e3-a126-6dad8b4ad711" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="33b077bd-2540-4852-9dca-9356ccadacf0">
+      <profileInstance Id="6288f554-97a6-4471-a7ae-d7ac85e594eb" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="96ffc931-6aa8-424d-9928-eb09118e8b6d" name="ALUNO" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2fcc88de-9808-445e-bf24-51fc5f6de9fa" />
+        <targetEnds>
+          <association Id="9caac270-0cc6-42b7-85b3-a48b28e1ba02" isDerived="false" sourceEndRoleName="ALUNO" targetEndRoleName="TURMA" isLeaf="false" isAbstract="false">
+            <classMoniker Id="4ce71b50-8b9b-4f64-b83b-3b3fcf61a43e" LastKnownName="TURMA" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b9c03778-0233-439c-84ff-f211696ee662" name="ALUNO" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="fd10a24b-d9bd-4768-ab5c-ba82c716ba71" name="Lower" value="*">
+                      <elementDefinition Id="a607d4b1-9260-4c33-806b-5f940ca5dad0" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="1740b745-caba-44c8-999d-b4f75ef89041" name="Upper" value="*">
+                      <elementDefinition Id="49339970-168c-43cb-9d4a-504d6188a192" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="7e48ba79-e98d-44ad-bc7f-0bc59ed3aef9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="984162cc-a71a-4054-b6ff-8c3aa5052a90" name="TURMA" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="3c19c949-ee78-4328-8925-76d35c6d0ad5" name="Lower" value="1">
+                      <elementDefinition Id="55d74b35-c464-44b9-97ea-fa056170c71d" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="26ec7cd8-6435-4aa5-8390-4369045bbcf5" name="Upper" value="1">
+                      <elementDefinition Id="832d68cb-614a-4bee-9ff8-d90125593a49" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="de26a4c7-e12e-4e2b-9e85-8523bc597734" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="686755b2-e687-4779-ab81-e95348c25fbb" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="bdd0760c-748e-4e00-8343-7ab4d5a7113b" name="Matricula" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ba125306-17ea-4b17-b844-80f39c3dce61" />
+          </property>
+          <property Id="df77e106-2bef-41bb-bce9-e4699e527e41" name="Nome" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="58b87fa7-95a1-4097-ad1d-c3c03e1c2fbb" />
+          </property>
+          <property Id="caa808d3-773c-4632-b060-f4a0431ccdab" name="Idade" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d3dde380-0ab6-4ad5-9538-2fec84fdb40d" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4ce71b50-8b9b-4f64-b83b-3b3fcf61a43e" name="TURMA" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="bc26fead-87d6-4602-8c62-6556a95df238" />
+        <targetEnds>
+          <association Id="90db152d-4528-4e5e-9a1a-c4c871389edc" isDerived="false" sourceEndRoleName="TURMA" targetEndRoleName="PROFESSOR" isLeaf="false" isAbstract="false">
+            <classMoniker Id="c9f3d36b-4961-46ce-8343-3df8218debb2" LastKnownName="PROFESSOR" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="06c55594-8136-46e4-8420-be0cdc0cfba3" name="TURMA" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="cb655334-aab2-49a3-a017-78adbe84304f" name="Lower" value="*">
+                      <elementDefinition Id="b47f5388-656d-4f03-9b92-dc72a65f16a3" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="47236c60-cdee-403e-8934-3ec926eaf6f2" name="Upper" value="*">
+                      <elementDefinition Id="d33456e8-2a91-46f6-95c3-7d265e9dcfaa" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="a7911289-3534-4134-955e-0aa994e79f5c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d089c83a-35b8-4c15-9c40-6a745e501bbc" name="PROFESSOR" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="dbfb49e8-1939-4a6c-86e5-4a61fdd1b842" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8d04c1fb-908c-4096-82a5-358bfae9187b" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="15445a13-d46b-4d28-8c04-00174402e06a" name="Codigo" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b1cc45f9-62c5-4e3e-a5da-f8a56dfd65d2" />
+          </property>
+          <property Id="1d751395-71f7-48eb-a9f7-82a355734b88" name="Nome" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6f8017e6-e46b-49ac-9c6d-6c1139eab35b" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c9f3d36b-4961-46ce-8343-3df8218debb2" name="PROFESSOR" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c0c7196f-703b-46ff-a1f5-f8b7fbec18dc" />
+        <ownedAttributesInternal>
+          <property Id="89e3e636-c9a2-4726-aee9-0926ec10b159" name="Codigo" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="edd267f3-e6a3-4cfb-99c6-de430134758c" />
+          </property>
+          <property Id="daab9464-a930-4f52-9702-6302f57f262d" name="Nome" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="37134c9f-de34-4b46-91d2-fc9a6f3b3861" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="352a7f04-c953-4777-862e-584343ab5937" name="Modelo">
+    <elementDefinition Id="46948acc-d317-4a64-b57e-86d72b081a3c" />
+  </package>
+</logicalClassDesignerModel>
